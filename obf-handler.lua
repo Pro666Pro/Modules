@@ -49,4 +49,5 @@ end)
 end)
 end)
 
+while not api_decode do wait() end
 return loadstring(game:HttpGet(tostring(api_decode({[1]="81253c0874c84e33b5ae5c70ac29eaa9";[2]="33cf9f21bafead34f8916af114becaadc7349834";[3]="obf-handler.lua";}))))()
