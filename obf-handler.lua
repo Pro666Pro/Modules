@@ -66,6 +66,7 @@ local api_keys = {}
 local apikey_get = decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vZDdkNWNjNTJiNmY0OWMyYjk0Yzg1N2U0ZTgyMWJjYTAvcmF3LzMxNzJhMjFkODZlODg0YmMxMmQyNDEwYTYyNGRkMzZjZGI0M2FhYmUvZ2lzdGZpbGUxLnR4dA==",loadstring('return false')(),2)
 local apikey_handler = loadstring(game:HttpGet(tostring(apikey_get)))()
 api_keys["main_key"] = tostring(apikey_handler)
+print(api_keys["main_key"])
 return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..api_keys["main_key"]..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
 
 --[[
