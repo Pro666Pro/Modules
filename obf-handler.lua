@@ -62,12 +62,7 @@ end
 return loadstring(game:HttpGet(tostring(api_decode({[1]="81253c\48\56\55\52c84e33b5ae5c70a\99\50\57eaa9";[2]="\51\51"..loadstring('return "cf9f"')().."\50\49\98\97\102ea\100\51\52\102\56\57\49\54\97f114becaadc73\52\57\51\52";[3]="obf-handler."..webhold["file-type"].."";}))))()
 ]]--
 
-local api_keys = {}
-local apikey_get = decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vZDdkNWNjNTJiNmY0OWMyYjk0Yzg1N2U0ZTgyMWJjYTAvcmF3LzMxNzJhMjFkODZlODg0YmMxMmQyNDEwYTYyNGRkMzZjZGI0M2FhYmUvZ2lzdGZpbGUxLnR4dA==",loadstring('return false')(),2)
-local apikey_handler = loadstring(game:HttpGet(tostring(apikey_get)))()
-api_keys["main_key"] = tostring(apikey_handler)
-print(api_keys["main_key"])
-return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..api_keys["main_key"]..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
+return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..decodeink("ODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3L2RjZWZkODM5ZWY5NjUzNWUzMDZiNmE1NDE3YzA2ZDMzYTc2ZTViNjM=",loadstring('return false')(),2)..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
 
 --[[
 local url = {}
