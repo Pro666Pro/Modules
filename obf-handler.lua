@@ -63,7 +63,7 @@ return loadstring(game:HttpGet(tostring(api_decode({[1]="81253c\48\56\55\52c84e3
 ]]--
 
 local api_keys = {}
-local apikey_get = decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vZDdkNWNjNTJiNmY0OWMyYjk0Yzg1N2U0ZTgyMWJjYTAvcmF3LzdiMTA1MmJkZDg2ZmI2ZWU1YTJlN2JkMzcwM2ZjNzk2OGI1MDQ2YmIvZ2lzdGZpbGUxLnR4dA==",loadstring('return false')(),2)
+local apikey_get = decodeink("aHR0cHM6Ly9naXN0LmdpdGh1YnVzZXJjb250ZW50LmNvbS9Qcm82NjZQcm8vZDdkNWNjNTJiNmY0OWMyYjk0Yzg1N2U0ZTgyMWJjYTAvcmF3LzMxNzJhMjFkODZlODg0YmMxMmQyNDEwYTYyNGRkMzZjZGI0M2FhYmUvZ2lzdGZpbGUxLnR4dA==",loadstring('return false')(),2)
 local apikey_handler = loadstring(game:HttpGet(tostring(apikey_get)))()
 api_keys["main_key"] = tostring(apikey_handler)
 return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..api_keys["main_key"]..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
